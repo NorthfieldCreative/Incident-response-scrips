@@ -1,0 +1,1 @@
+Get-Service | Where -Property 'Name' -eq scsm | Select -Property 'Status'

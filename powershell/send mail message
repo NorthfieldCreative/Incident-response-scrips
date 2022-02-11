@@ -1,0 +1,1 @@
+Send-MailMessage -SmtpServer int-sym14w-email -To "Jean Grey <jgrey@fibergenesis.com>" -From "Jane Doe <janedoe@fibergenesis.com>" -Subject "good times" -Body "Please ignore." -Attachment "C:\ofc.txt"

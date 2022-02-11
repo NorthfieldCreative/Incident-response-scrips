@@ -1,0 +1,2 @@
+$NumberOfLogicalProcessors=(Get-WmiObject -class Win32_processor | Measure-Object -Sum NumberOfLogicalProcessors).Sum
+(Get-Counter '\Process(*)\% Processor Time').Countersamples | Where cookedvalue -gt ($NumberOfLogicalProcessors*10) | Sort cookedvalue -Desc | ft -a instancename, @{Name='CPU %';Expr={[Math]::Round($_.CookedValue / $NumberOfLogicalProcessors)}}
