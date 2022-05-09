@@ -1,0 +1,2 @@
+cd /etc/rc.d/init.d/
+./scsm restart

@@ -1,2 +1,3 @@
 Get-Service | Where -Property 'Name' -eq scsm | Select -Property 'Status'
+Stop-Service scsm
 Start-Service scsm
