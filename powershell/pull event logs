@@ -1,0 +1,1 @@
+Get-Eventlog -LogName application | Export-csv application_logs.csv | Get-Eventlog -LogName System | Export-Clixml system_logs.csv

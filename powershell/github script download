@@ -1,0 +1,1 @@
+Invoke-Webrequest -Uri "https://raw.githubusercontent.com/NorthfieldCreative/Incident-response-scrips/master/powershell/useraudit.ps1" -OutFile .\test.ps1
