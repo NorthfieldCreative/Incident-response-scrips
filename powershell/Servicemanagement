@@ -2,3 +2,5 @@ Stop-Service scsm
 Get-Service | Where -Property 'Name' -eq scsm | Select -Property 'Status'
 Start-Service scsm
 Get-Service | Where -Property 'Name' -eq scsm | Select -Property 'Status'
+
+C:\program files\logrhythm\logrhythm system monitor\config
