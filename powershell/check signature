@@ -1,0 +1,1 @@
+Get-AuthenticodeSignature file.exe | Format-List
