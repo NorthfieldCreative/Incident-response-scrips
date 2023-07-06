@@ -1,0 +1,18 @@
+Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Enum\USBSTOR\*\*' | Select FriendlyName
+Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Enum\USB\*\*' | Select FriendlyName
+
+
+Get-PnpDevice | Where-Object {$_.InstanceId.StartsWith('USBSTOR')}
+Get-PnpDevice | Where-Object {$_.InstanceId.StartsWith('USB')} | Format-Table -AutoSize
+Get-CimInstance -ClassName CIM_DiskDrive | Where-Object InterfaceType -EQ 'USB'
+
+When you connect a USB flash drive to your system, a number of Information and Verbose Level event records are generated in the Operational Log. These records will consist of the following Event IDs:
+
+2003
+2004
+2006
+2010
+2100
+2101
+2105
+2106
