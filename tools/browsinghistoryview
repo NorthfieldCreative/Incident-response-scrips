@@ -1,0 +1,5 @@
+
+
+Start-Process -FilePath "C:\Browsinghistoryview.exe" "/scomma C:\browserhis.csv" -wait
+
+Start-Process -FilePath "C:\bhv" "/scomma C:\bhv.csv" -wait
