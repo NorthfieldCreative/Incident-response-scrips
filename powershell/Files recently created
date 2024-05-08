@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 forfiles /P C:\ /S /D +11/01/2023 /C "cmd /c echo @path @fdate"
+=======
+forfiles /P C:\ /S /D +10/10/2023 /C "cmd /c echo @path @fdate"
+>>>>>>> 0b330c99bebed1ab64845c1e2dc6ef5947b7bb5b

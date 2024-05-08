@@ -1,4 +1,5 @@
 reg query HKCU /s /f {BD07DDB9-1C61-4DCE-9202-A2BA1757CDB2}
+<<<<<<< HEAD
 
 
 reg query HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
@@ -23,3 +24,6 @@ reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlog
 reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify
 reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
 reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+=======
+reg query HKLM /s /f "svchost.exe -k LocalServiceNetworkRestricted -p"
+>>>>>>> 0b330c99bebed1ab64845c1e2dc6ef5947b7bb5b
