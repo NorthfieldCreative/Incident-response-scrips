@@ -1,1 +1,1 @@
-forfiles /P C:\ /S /D +10/10/2021 /C "cmd /c echo @path @fdate"
+forfiles /P C:\ /S /D +11/01/2023 /C "cmd /c echo @path @fdate"
